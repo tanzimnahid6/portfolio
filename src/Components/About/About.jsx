@@ -1,10 +1,9 @@
 
-
 const About = () => {
     return (
       <div className=" py-8 bg-gradient-to-b from-gray-500  to-green-800  max-h-full">
-        <div className="grid grid-cols-1 md:grid-cols-3 px-14">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-3 px-4 md:px-14">
+          <div className="order-last md:order-first">
             <div className="grid grid-cols-3 gap-4  p-4">
               <div className="hover:scale-125 transition duration-200">
                 <img src="./tailwind.png" alt="" />
@@ -33,10 +32,10 @@ const About = () => {
             </div>
           </div>
 
-          <div className="md:col-span-2">
-            <div className=" text-white pl-16">
-              <h1 className="text-6xl font-bold">About Me</h1>
-              <p className="text-4xl mt-8 font-bold bg-gradient-to-r from-cyan-200 to-indigo-400 bg-clip-text text-transparent">
+          <div className="md:col-span-2 order-1 ">
+            <div className=" text-white md:pl-16">
+              <h1 className="text-4xl md:text-6xl text-center md:text-left font-bold">About Me</h1>
+              <p className="text-2xl md:text-4xl mt-8 font-bold bg-gradient-to-r from-cyan-200 to-indigo-400 bg-clip-text text-transparent">
                 I am a Front-end Developer with over <br></br> 1 years of
                 experience.
               </p>
