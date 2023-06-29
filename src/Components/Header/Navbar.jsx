@@ -17,9 +17,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#166534] ">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 t">
-        <div className="flex items-center justify-between h-16">
+    <nav className="bg-[#166534] w-full fixed z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 ">
           <div>
             <h1 className="text-white text-2xl font-bold">Jubayer</h1>
           </div>
@@ -100,12 +100,19 @@ const Navbar = () => {
           </div>
           <div className="hidden md:block ">
             <div className="flex flex-row gap-4">
-              <BiLogoFacebookCircle
-                size={26}
-                color="white"
-              ></BiLogoFacebookCircle>
-              <FaLinkedinIn size={26} color="white"></FaLinkedinIn>
-              <FaGithub size={26} color="white"></FaGithub>
+              <div className=" hover:scale-75 transition duration-200">
+                <BiLogoFacebookCircle
+                  size={26}
+                  color="white"
+                ></BiLogoFacebookCircle>
+              </div>
+
+              <div className=" hover:scale-75 transition duration-200">
+                <FaLinkedinIn size={26} color="white"></FaLinkedinIn>
+              </div>
+              <div className=" hover:scale-75 transition duration-200">
+                <FaGithub size={26} color="white"></FaGithub>
+              </div>
             </div>
           </div>
         </div>
