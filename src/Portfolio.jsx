@@ -5,6 +5,8 @@ import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Header/NavBar";
 import Projects from "./Components/Projects/Projects";
 import Tools from "./Components/Tools/Tools";
+import './App.css'
+import { ContactUs } from "./Components/Contact/Contact";
 const Portfolio = () => {
   return (
     <div className="">
@@ -20,6 +22,8 @@ const Portfolio = () => {
       <Tools></Tools>
       <hr />
       <Projects></Projects>
+      <hr />
+      <ContactUs></ContactUs>
       <Footer></Footer>
     </div>
   );

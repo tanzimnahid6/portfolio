@@ -1,8 +1,9 @@
 import { useState, useRef } from "react";
-import { NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import { Transition } from "@headlessui/react";
 import {  FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BiLogoFacebookCircle } from "react-icons/bi";
+
 
 
 
@@ -16,6 +17,22 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  //download resume============
+  const downloadPdf = ()=>{
+    console.log('Clicked');
+            fetch("./resume.pdf").then((response) => {
+              response.blob().then((blob) => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement("a");
+                alink.href = fileURL;
+                alink.download = "./resume.pdf";
+                alink.click();
+              });
+            });
+  }
+
   return (
     <nav className="bg-[#166534] w-full fixed z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -26,25 +43,24 @@ const Navbar = () => {
           <div className="flex items-center ">
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <NavLink
-                  exact="true"
-                  to="/"
+                <a
+                  href="#home"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white hover:texl-4xl px-3 py-2 rounded-md  "
                 >
                   Home
-                </NavLink>
-                <NavLink
-                  to="/about"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                </a>
+                <a href="#about"
+                
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   About
-                </NavLink>
-                <NavLink
-                  to="/services"
+                </a>
+                <a
+                  href="#services"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Services
-                </NavLink>
+                </a>
                 <NavLink
                   to="/contact"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
@@ -52,7 +68,9 @@ const Navbar = () => {
                   Contact
                 </NavLink>
                 <div>
-                  <button className="btn btn-primary ">Resume</button>
+                  <button className="btn btn-primary " onClick={downloadPdf}>
+                    Resume
+                  </button>
                 </div>
               </div>
             </div>
@@ -133,19 +151,18 @@ const Navbar = () => {
             className="md:hidden transition-all duration-300 ease-in-out"
           >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <NavLink
-                exact="true"
-                to="/"
+              <a
+                href="#home"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Home
-              </NavLink>
-              <NavLink
-                to="/about"
+              </a>
+              <a
+                href="#about"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 About
-              </NavLink>
+              </a>
               <NavLink
                 to="/services"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
@@ -159,7 +176,9 @@ const Navbar = () => {
                 Contact
               </NavLink>
               <div>
-                <button className="btn btn-primary">RESUME</button>
+                <button className="btn btn-primary" onClick={downloadPdf}>
+                  RESUME
+                </button>
               </div>
             </div>
           </div>

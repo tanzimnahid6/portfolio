@@ -2,7 +2,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Banner = () => {
   return (
-    <div>
+    <div id="home">
       <div className="mt-16 grid grid-cols-1 md:grid-cols-2 px-4 md:px-14  bg-gradient-to-b from-green-800 to-gray-500  max-h-full items-center justify-between w-full gap-4 pb-8">
         <div className="md:mt-12">
           <div className=" text-white ">
