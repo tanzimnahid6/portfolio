@@ -49,8 +49,8 @@ const Navbar = () => {
                 >
                   Home
                 </a>
-                <a href="#about"
-                
+                <a
+                  href="#about"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   About
@@ -61,12 +61,12 @@ const Navbar = () => {
                 >
                   Services
                 </a>
-                <NavLink
-                  to="/contact"
+                <a
+                  href="#contact"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Contact
-                </NavLink>
+                </a>
                 <div>
                   <button className="btn btn-primary " onClick={downloadPdf}>
                     Resume
@@ -119,17 +119,23 @@ const Navbar = () => {
           <div className="hidden md:block ">
             <div className="flex flex-row gap-4">
               <div className=" hover:scale-75 transition duration-200">
-                <BiLogoFacebookCircle
-                  size={26}
-                  color="white"
-                ></BiLogoFacebookCircle>
+                <a href="https://www.facebook.com/tanzim.nahid.1/">
+                  <BiLogoFacebookCircle
+                    size={26}
+                    color="white"
+                  ></BiLogoFacebookCircle>
+                </a>
               </div>
 
               <div className=" hover:scale-75 transition duration-200">
-                <FaLinkedinIn size={26} color="white"></FaLinkedinIn>
+                <a href="https://www.linkedin.com/in/al-jubayer/">
+                  <FaLinkedinIn size={26} color="white"></FaLinkedinIn>
+                </a>
               </div>
               <div className=" hover:scale-75 transition duration-200">
-                <FaGithub size={26} color="white"></FaGithub>
+                <a href="https://github.com/tanzimnahid6">
+                  <FaGithub size={26} color="white"></FaGithub>
+                </a>
               </div>
             </div>
           </div>
@@ -163,18 +169,15 @@ const Navbar = () => {
               >
                 About
               </a>
-              <NavLink
-                to="/services"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-              >
+              <NavLink className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                 Services
               </NavLink>
-              <NavLink
-                to="/contact"
+              <a
+                href="#contact"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Contact
-              </NavLink>
+              </a>
               <div>
                 <button className="btn btn-primary" onClick={downloadPdf}>
                   RESUME

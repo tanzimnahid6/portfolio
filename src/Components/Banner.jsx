@@ -1,6 +1,17 @@
 import { TypeAnimation } from "react-type-animation";
+import { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const Banner = () => {
+      useEffect(() => {
+        AOS.init({
+          duration: 2000, // Animation duration in milliseconds
+          once: true, // Only animate once
+        });
+      }, []);
   return (
     <div id="home">
       <div className="mt-16 grid grid-cols-1 md:grid-cols-2 px-4 md:px-14  bg-gradient-to-b from-green-800 to-gray-500  max-h-full items-center justify-between w-full gap-4 pb-8">
@@ -36,6 +47,7 @@ const Banner = () => {
             </p>
             <div className="mt-12">
               <a
+                data-aos="fade-up"
                 href="#_"
                 className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group"
               >
@@ -79,7 +91,7 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center">
+        <div data-aos="fade-left" className="flex justify-center items-center">
           <img
             className="md:w-[380px] md:h-[380px] w-[300px] h-[300px]  rounded-full  bg-gradient-to-r p-[6px] from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
             src="./image.jpg"

@@ -4,12 +4,23 @@ import { FaSchool, FaUniversity } from "react-icons/fa";
 import { RiSchoolFill } from "react-icons/Ri";
 
 
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const EduSkill = () => {
+       useEffect(() => {
+         AOS.init({
+           duration: 2000, // Animation duration in milliseconds
+           once: true, // Only animate once
+         });
+       }, []);
   return (
     <div className="px-4 md:px-14 pt-16 bg-gradient-to-b from-green-800 to-gray-500">
       <h1 className="text-4xl font-bold text-white py-8">EDUCATION & SKILLS</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div
+        data-aos="fade-zoom-in"
+        className="grid grid-cols-1 md:grid-cols-2 gap-10"
+      >
         <div className="bg-black shadow-lg md:w-3/4  w-full rounded-xl text-white p-8 h-96">
           <h1 className="text-2xl font-bold pt-2 pb-8">Education</h1>
 
@@ -47,7 +58,9 @@ const EduSkill = () => {
         </div>
 
         <div className="p-8 w-full">
-          <h1 className="text-4xl md:text-xl text-white pb-4 font-bold md:text-left text-center ">My Skills</h1>
+          <h1 className="text-4xl md:text-xl text-white pb-4 font-bold md:text-left text-center ">
+            My Skills
+          </h1>
           <p className=" text-white pb-4">
             Experienced MERN stack developer adept at creating robust and
             scalable full-stack web applications. Proficient in MongoDB,
