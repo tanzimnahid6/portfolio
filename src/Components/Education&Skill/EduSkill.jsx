@@ -2,26 +2,28 @@ import ProgressBar from "@ramonak/react-progress-bar";
 
 import { FaSchool, FaUniversity } from "react-icons/fa";
 import { RiSchoolFill } from "react-icons/Ri";
+import { MdGolfCourse } from "react-icons/Md";
+
 
 
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const EduSkill = () => {
-       useEffect(() => {
-         AOS.init({
-           duration: 2000, // Animation duration in milliseconds
-           once: true, // Only animate once
-         });
-       }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 2000, // Animation duration in milliseconds
+      once: true, // Only animate once
+    });
+  }, []);
   return (
     <div className="px-4 md:px-14 pt-16 bg-gradient-to-b from-green-800 to-gray-500">
       <h1 className="text-4xl font-bold text-white py-8">EDUCATION & SKILLS</h1>
       <div
         data-aos="fade-zoom-in"
-        className="grid grid-cols-1 md:grid-cols-2 gap-10"
+        className="grid grid-cols-1 w-full place-items-center md:grid-cols-2 gap-2 pb-4"
       >
-        <div className="bg-black shadow-lg md:w-3/4  w-full rounded-xl text-white p-8 h-96">
+        <div className="bg-black shadow-lg md:w-3/4  w-full rounded-xl text-white p-8 ">
           <h1 className="text-2xl font-bold pt-2 pb-8">Education</h1>
 
           <div className="flex flex-col gap-6">
@@ -35,7 +37,6 @@ const EduSkill = () => {
               <p>Department of Mathematics</p>
               <p>2020 - Present</p>
             </div>
-
             <div>
               <div className="flex items-center gap-2 md:text-xl">
                 <span>
@@ -45,7 +46,7 @@ const EduSkill = () => {
               </div>
               <p>2017 - 2019</p>
             </div>
-            <div className="pb-8">
+            <div>
               <div className="flex items-center gap-2 md:text-xl">
                 <span>
                   <RiSchoolFill></RiSchoolFill>
@@ -53,6 +54,19 @@ const EduSkill = () => {
                 <h1>Dharabarisha High School,Natore</h1>
               </div>
               <p>Left 2017</p>
+            </div>
+
+            <div>
+              <h1 className="text-2xl font-bold pb-4">Courses</h1>
+
+              <div className="flex items-center gap-2 md:text-xl">
+                <span>
+                  <MdGolfCourse></MdGolfCourse>
+                </span>
+                <h1>Programming Hero</h1>
+              </div>
+              <p>Complete Web Development Course</p>
+              <p>Dec 2022 - June 2023</p>
             </div>
           </div>
         </div>
