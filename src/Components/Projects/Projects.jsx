@@ -17,7 +17,7 @@ const Projects = () => {
       <h1 className="text-4xl md:text-5xl text-center md:text-left font-bold text-white pt-8 uppercase">
         Projects
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-16 w-full ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-16 w-full place-items-center ">
         <div>
           <div
             data-aos="fade-left"

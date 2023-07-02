@@ -1,5 +1,5 @@
 
-import { BiLogoFirebase } from "react-icons/bi";
+import { BiGitCommit, BiLogoFirebase } from "react-icons/bi";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -30,12 +30,13 @@ const Tools = () => {
               <div>
                 <h1 className="text-2xl font-bold">Firebase</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perferendis fugiat fugit sunt provident explicabo iusto
-                  deserunt expedita asperiores cupiditate mollitia molestias
-                  autem aspernatur modi pariatur quidem itaque, veritatis hic,
-                  doloremque officiis suscipit dolor dicta a sed. Dolorem nam
-                  fugit
+                  Firebase provides robust authentication and user management
+                  capabilities. It offers easy-to-use authentication methods,
+                  including email/password, social logins (e.g., Google,
+                  Facebook, Twitter), and integration with third-party identity
+                  providers. Developers can manage user accounts, handle user
+                  registration and login, and implement user-based security
+                  rules to control access to their applications resources.
                 </p>
               </div>
             </div>
@@ -46,17 +47,18 @@ const Tools = () => {
           >
             <div className="flex gap-2">
               <span>
-                <BiLogoFirebase color="yellow" size={48} />
+                <img src="./vercel-2.png" alt="" />
               </span>
               <div>
-                <h1 className="text-2xl font-bold">Firebase</h1>
+                <h1 className="text-2xl font-bold">Vercel</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perferendis fugiat fugit sunt provident explicabo iusto
-                  deserunt expedita asperiores cupiditate mollitia molestias
-                  autem aspernatur modi pariatur quidem itaque, veritatis hic,
-                  doloremque officiis suscipit dolor dicta a sed. Dolorem nam
-                  fugit
+                  Vercel simplifies the deployment process, allowing developers
+                  to quickly deploy their applications to the cloud. With just a
+                  few clicks or a simple command, developers can deploy static
+                  websites, single-page applications (SPAs), serverless
+                  functions, and full-stack applications. Vercel integrates
+                  seamlessly with popular version control systems like Git,
+                  making it easy to automate deployments.
                 </p>
               </div>
             </div>
@@ -67,17 +69,16 @@ const Tools = () => {
           >
             <div className="flex gap-2">
               <span>
-                <BiLogoFirebase color="yellow" size={48} />
+                <BiGitCommit color="yellow" size={48} />
               </span>
               <div>
-                <h1 className="text-2xl font-bold">Firebase</h1>
+                <h1 className="text-2xl font-bold">Git&GitHub</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perferendis fugiat fugit sunt provident explicabo iusto
-                  deserunt expedita asperiores cupiditate mollitia molestias
-                  autem aspernatur modi pariatur quidem itaque, veritatis hic,
-                  doloremque officiis suscipit dolor dicta a sed. Dolorem nam
-                  fugit
+                  Git is a distributed version control system, which means that
+                  every developer has a complete copy of the repository on their
+                  local machine. This allows developers to work offline, commit
+                  changes locally, and easily synchronize and collaborate with
+                  others when they are connected.
                 </p>
               </div>
             </div>

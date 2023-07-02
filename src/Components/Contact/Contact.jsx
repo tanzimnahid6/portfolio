@@ -48,13 +48,13 @@ export const ContactUs = () => {
                 enim autem omnis fugiat perspiciatis? Ad, veritatis.
               </p>
               <p className="mb-2 text-neutral-500 dark:text-neutral-300">
-                New York, 94126, United States
+                Dhaka,Bangladesh
               </p>
               <p className="mb-2 text-neutral-500 dark:text-neutral-300">
-                + 01 234 567 89
+                +880 1571167055
               </p>
               <p className="mb-2 text-neutral-500 dark:text-neutral-300">
-                info@gmail.com
+                aljubayer.nahid@gmail.com
               </p>
             </div>
             <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">

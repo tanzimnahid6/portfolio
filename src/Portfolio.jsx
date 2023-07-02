@@ -9,7 +9,7 @@ import './App.css'
 import { ContactUs } from "./Components/Contact/Contact";
 const Portfolio = () => {
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <Navbar></Navbar>
       <hr />
       <Banner></Banner>
