@@ -92,14 +92,12 @@ const Tools = () => {
                 <BiLogoFirebase color="yellow" size={48} />
               </span>
               <div>
-                <h1 className="text-2xl font-bold">Firebase</h1>
+                <h1 className="text-2xl font-bold">Visual Studio Code</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perferendis fugiat fugit sunt provident explicabo iusto
-                  deserunt expedita asperiores cupiditate mollitia molestias
-                  autem aspernatur modi pariatur quidem itaque, veritatis hic,
-                  doloremque officiis suscipit dolor dicta a sed. Dolorem nam
-                  fugit
+                  Visual Studio Code (VS Code) is a lightweight, cross-platform
+                  source code editor with extensive language support,
+                  customizable features, integrated terminal, built-in version
+                  control, and a thriving extension ecosystem.g
                 </p>
               </div>
             </div>
